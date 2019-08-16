@@ -1,10 +1,5 @@
 pipeline {
   agent any
-  parameters {
-    //run description: 'Run for Build', filter: 'SUCCESSFUL', name: 'RUN', projectName: 'devoptics-build/master'
-    //run description: 'Run for Build Lib', filter: 'SUCCESSFUL', name: 'RUNLIB', projectName: 'https://cbcore.gke.kearos.net/teams-cat/job/cat/job/devoptics-lib-build/job/master/'
-    //string defaultValue: '', description: 'Manually enter Run ID for lib-build', name: 'LIB_RUN_ID', trim: true
-  }
   stages {
     stage('Build') {
       steps {
